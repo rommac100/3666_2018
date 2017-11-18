@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Autnomous Settings_Alliance_Selector-->
+
+    <string-array name="alliance_array">
+        <item>Red</item>
+        <item>Blue</item>
+    </string-array>
+
+    <string name="alliance_prompt">Select the Alliance Colour</string>
+</resources>

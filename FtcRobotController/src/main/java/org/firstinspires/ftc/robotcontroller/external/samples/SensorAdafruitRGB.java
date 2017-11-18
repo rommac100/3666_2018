@@ -67,8 +67,7 @@ import com.qualcomm.robotcore.hardware.DigitalChannel;
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
-@Autonomous(name = "Sensor: AdafruitRGB", group = "Sensor")
-@Disabled                            // Comment this out to add to the opmode list
+@Autonomous(name = "Sensor: AdafruitRGB", group = "Sensor") // Comment this out to add to the opmode list
 public class SensorAdafruitRGB extends LinearOpMode {
 
   ColorSensor sensorRGB;
@@ -108,7 +107,7 @@ public class SensorAdafruitRGB extends LinearOpMode {
     cdim.setDigitalChannelMode(LED_CHANNEL, DigitalChannel.Mode.OUTPUT);
 
     // get a reference to our ColorSensor object.
-    sensorRGB = hardwareMap.colorSensor.get("sensor_color");
+    sensorRGB = hardwareMap.colorSensor.get("colourSen");
 
     // turn the LED on in the beginning, just so user will know that the sensor is active.
     cdim.setDigitalChannelState(LED_CHANNEL, bLedOn);

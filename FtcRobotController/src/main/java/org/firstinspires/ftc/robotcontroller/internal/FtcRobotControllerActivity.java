@@ -496,6 +496,12 @@ public class FtcRobotControllerActivity extends Activity
       startActivityForResult(settingsIntent, RequestCode.SETTINGS_ROBOT_CONTROLLER.ordinal());
       return true;
     }
+    else if (id == R.id.autonomous_menu)
+    {
+      Intent intent = new Intent(FtcRobotControllerActivity.this,Autonomous_Options.class);
+      startActivityForResult(intent, 0);
+      return true;
+    }
     else if (id == R.id.action_about) {
       Intent intent = new Intent(AppUtil.getDefContext(), AboutActivity.class);
       intent.putExtra(LaunchActivityConstantsList.ABOUT_ACTIVITY_CONNECTION_TYPE, networkType);
